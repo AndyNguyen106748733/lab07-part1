@@ -10,6 +10,7 @@
 
 <body>
     <h1>PHP Arrays</h1>
+
 <?php
 
 $days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -19,10 +20,25 @@ for ($i = 0; $i < count($days); $i++) {
     if ($i == count($days) - 1) {
         echo "$days[$i].";
         break;
+    }
+    echo "$days[$i], ";
+}
+echo "</p>";
+
+
+$days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+echo "<p>The days of the week in French are: </p>";
+echo "<p>";
+for ($i = 0; $i < count($days); $i++) {
+    if ($i == count($days) - 1) {
+        echo "$days[$i].";
+        break;
+    }
     
     echo "$days[$i], ";
 }
 echo "</p>";
+
 ?>
 
 
