@@ -6,7 +6,25 @@
 </head>
 
 <body>
-    <h1>Using PHP variable, arrays and operators</h1>
+    <h1>PHP variables, arrays and operators</h1>
+<?php
+
+$marks = [85,85,95];
+$marks[1] = 90;
+$ave = 0;
+for ($i = 0; $i < count($marks); $i++) {
+    $ave += $marks[$i];
+}
+$ave /= count($marks);
+if ($ave >= 50) {
+    $status = "PASSED";
+} else {
+    $status = "FAILED";
+}
+echo "<p>The average score is $ave. You $status.</p>";
+
+?>
+
 
 </body>
 
