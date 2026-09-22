@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="Author" content="Andy Nguyen">
+    <meta name="keywords" content="PHP, variables, arrays, operators">
+    <meta name="description" content="A simple PHP page demonstrating variables, arrays, and operators">
     <title>Using PHP variable, arrays and operators</title>
 </head>
 
