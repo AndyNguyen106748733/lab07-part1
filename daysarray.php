@@ -13,11 +13,16 @@
 <?php
 
 $days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
+echo "<p>The days of the week in English are: </p>";
+echo "<p>";
 for ($i = 0; $i < count($days); $i++) {
-    echo "<p>$days[$i]</p>";
+    if ($i == count($days) - 1) {
+        echo "$days[$i].";
+        break;
+    
+    echo "$days[$i], ";
 }
-
+echo "</p>";
 ?>
 
 
